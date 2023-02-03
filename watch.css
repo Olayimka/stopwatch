@@ -1,0 +1,102 @@
+body {
+    background: #ffa600;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
+      Helvetica, Arial, 'Lucida Grande', sans-serif;
+    width: 100%;
+    margin:0;
+    padding:0;
+  }
+  
+  .wrapper {
+    width: 100%;
+    margin: 30px auto;
+    color: white;
+    text-align: center;
+    height:100vh;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 2.6em;
+    text-transform: uppercase;
+    margin-top: 50px;
+  }
+  
+  #seconds,
+  #tens {
+    font-size: 2em;
+  }
+  
+  button {
+    border-radius: 5px;
+    background: purple;
+    color: white;
+    border: solid 1px white;
+    text-decoration: none;
+    cursor:grab;
+    font-size: 1.2em;
+    padding: 18px 10px;
+    width: 180px;
+    margin: 10px;
+    outline: none;
+    border-radius:30px;}
+    button:hover {
+      @include transition;
+      background: white;
+      border: solid 1px white;
+      color: #ffa600;
+    }
+  
+  @media screen(min-width:480px;) {
+    body {
+        background:lightgreen;
+        font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
+          Helvetica, Arial, 'Lucida Grande', sans-serif;
+        height: 50%;
+      }
+      
+      .wrapper {
+        width: 400px;
+        margin: 30px auto;
+        color: white;
+        text-align: center;
+      }
+      
+      h1,
+      h2,
+      h3 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 50;
+        font-size: 1.3em;
+        text-transform: uppercase;
+      }
+      
+      #seconds,
+      #tens {
+        font-size: 0.5em;
+      }
+      
+      button {
+        border-radius: 5px;
+        background: grey;
+        color: white;
+        border: solid 1px white;
+        text-decoration: none;
+        cursor:grab;
+        font-size: 0.6em;
+        padding: 18px 10px;
+        width: 45px;
+        margin: 10px;
+        outline: none;
+        &:hover {
+          @include transition;
+          background: white;
+          border: solid 1px white;
+          color: #ffa600;
+        }
+      }
+  }
+  
